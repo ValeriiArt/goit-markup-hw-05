@@ -214,7 +214,7 @@ address {
 /* -------------END.HEADER--------------- */
 /* ------------Section HERO-------------- */
 .hero {
-  min-width: 1600px;
+  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -414,7 +414,7 @@ address {
   padding: 12px;
   border-radius: 50%;
   color: #afb1b8;
-  transition: background-color var(--main-cubic-bezier),
+  transition: background-color 250ms var(--main-cubic-bezier),
     color 250ms var(--main-cubic-bezier);
 }
 .social-link-team:hover,
