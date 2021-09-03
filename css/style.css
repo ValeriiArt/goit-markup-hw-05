@@ -559,7 +559,29 @@ address {
   position: relative;
   overflow: hidden;
 }
-.gallery-overlay::before {
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(101%);
+  transition: transform 250ms var(--main-cubic-bezier);
+}
+.gallery-link:hover .text-overlay,
+.gallery-link:focus .text-overlay {
+  transform: translateY(0%);
+}
+/* .gallery-overlay::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -570,7 +592,6 @@ address {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
   transition: transform 250ms var(--main-cubic-bezier);
-  /* opacity: 0; */
 }
 
 .gallery-link:hover .gallery-overlay::before,
@@ -594,7 +615,7 @@ address {
   padding: 63px 24px;
   transform: translateY(101%);
   transition: transform 250ms var(--main-cubic-bezier);
-}
+} */
 /* ----------------end-overlay ----------------*/
 .gal-text-box {
   padding: 20px 24px;
